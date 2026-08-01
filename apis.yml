@@ -1,8 +1,27 @@
 aid: serena-and-lily
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/serena-and-lily.png
 name: Serena & Lily
-description: Serena & Lily is a company surfaced as a portfolio company of battery-ventures and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Serena & Lily is a home furnishings and design brand founded in 2003 and based
+  in Sausalito, California, known for its coastal-inspired furniture, bedding,
+  rugs, wallpaper, lighting, and home decor sold through its e-commerce site and
+  a network of design shops. The company was surfaced as a portfolio company of
+  Battery Ventures and added to the API Evangelist network for enrichment. As a
+  direct-to-consumer retail and interior-design brand, Serena & Lily publishes no
+  public developer API, developer portal, or machine-readable API surface at the
+  time of this enrichment pass; this profile captures its identity and domain
+  security posture only.
 url: https://raw.githubusercontent.com/api-evangelist/serena-and-lily/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,12 +31,27 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Home Furnishings
+- Retail
+- E-Commerce
+- Interior Design
+- Direct to Consumer
 apis: []
+common:
+- type: DomainSecurity
+  url: security/serena-and-lily-domain-security.yml
+- type: Website
+  url: https://www.serenaandlily.com/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
